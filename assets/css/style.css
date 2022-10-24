@@ -123,6 +123,18 @@ li {
   --border-clr:                 #e9eaeb;
 }
 
+/* common styling  */
+.heading {
+  color: var(--secondary-clr);
+  font-size: 44px;
+  font-weight: 700;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.banner { padding: 0; }
 /*=================================
   Header styling starts here
 =================================*/
@@ -345,7 +357,52 @@ small {
 }
 /*=================================
   Banner styling ends here
-=================================*/  
+=================================*/ 
+/*=================================
+  Charity feature styling starts here
+=================================*/ 
+.charity .heading {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  gap: 25px;
+}
+
+.feature-list li {
+  padding: 30px 27px;
+  border-radius: 20px;
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.feature-list li:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,.175);
+  transition: all .4s ease-in;
+}
+
+.feature-list li:hover .feature-img {
+  transform: scale(.75);
+  transition: all .4s ease-in;
+}
+
+.feature-list img {
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.charity-heading {
+  padding: 20px 0 16px;
+  color: var(--primary-clr);
+  font-size: 24px;
+}
+
+.bold { font-weight: 700; }
+/*=================================
+  Charity feature styling ends here
+=================================*/ 
 
 /*=================================
   main styling starts here
