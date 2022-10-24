@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 82.7%; 
+  width: 83.7%; 
   margin: 0 auto;
 }
 
@@ -110,18 +110,80 @@ li {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Metropolis', 'sans-serif';
 }
+
+:root {
+  --white-clr:                  #fff;
+  --primary-clr:                #5ac0ab;
+  --secondary-clr:              #5a6f80;
+  --section-bg-clr:             #f0f8ff;
+  --footer-bg-clr:              #44525d;
+  --dark-clr:                   #000;
+  --p-clr:                      #717275;
+  --border-clr:                 #e9eaeb;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
+.header { background-color: var(--primary-clr); }
 
+.header .wrapper {
+  padding: 15px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.contact-link {
+  display: flex;
+  gap: 17px;
+}
 
+.before-icon {
+  display: inline-block;
+  color: var(--white-clr);
+  font-size: 15px;
+}
 
+.before-icon::before {
+  content: "\f3c5";
+  margin:2px 8px 0;
+  font-size: 15px;
+  font-family: "FontAwesome";
+  float: left;
+}
 
+.envelope::before { content: "\f0e0"; }
 
+.social-icon {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.social-icon::before {
+  content: "\f099";
+  margin-right: 15px;
+  color: var(--white-clr);
+  font-family: "FontAwesome";
+  text-indent: 0;
+  float: left;
+}
+
+.facebook::before { content: "\f09a"; }
+.instagram::before { content: "\f16d"; }
+.youtube::before { content: "\f16a"; }
+.whatsapp::before { content: "\f232"; }
 /*=================================
   Header styling ends here
+=================================*/  
+/*=================================
+  Nav styling starts here
+=================================*/  
+
+/*=================================
+  Nav styling ends here
 =================================*/  
 
 /*=================================
