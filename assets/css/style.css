@@ -181,7 +181,78 @@ li {
 /*=================================
   Nav styling starts here
 =================================*/  
+.nav .wrapper {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  display: block;
+  background-color: #000;
+  text-indent: -9999px;
+  transition: all .3s;
+}
+
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.drop-item {
+  display: none;
+}
+
+.nav-item {
+  padding: 20px;
+  color: #717275;
+  font-size: 16px;
+}
+
+.nav-item.active { color: var(--primary-clr); }
+
+.donate-btn {
+  padding: 12px 28px;
+  margin-left: 20px;
+  border: 2px solid #596E7F;
+  border-radius: 30px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown::before {
+  content: "\f107";
+  padding-left: 5px;
+  font-size: 15px;
+  font-family: "FontAwesome";
+  float: right;
+}
+
+.logo-name {
+  display: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-clr);
+  vertical-align: middle;
+}
+
+small {
+  display: block;
+  color: var(--secondary-clr);
+  font-size: 10.5px;
+  text-transform: uppercase;
+}
 /*=================================
   Nav styling ends here
 =================================*/  
