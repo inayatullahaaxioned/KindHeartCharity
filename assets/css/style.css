@@ -657,6 +657,83 @@ small {
 /*=================================
   become volunteer styling ends here
 =================================*/
+/*=================================
+  causes styling starts here
+=================================*/
+.causes .heading {
+  text-align: center;
+}
+
+.cause-image {
+  max-height: 237px;
+  margin-bottom: 32px;
+}
+
+.cause-image img {
+  min-height: 237px;
+  max-height: 237px;
+  height: 100%;
+}
+
+.cause-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cause-content {
+  width: 80%;
+  margin: 0 auto;
+  color: var(--primary-clr);
+}
+
+.cause-heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cause-content p {
+  width: 90%;
+  margin: 25px 0;
+  line-height: 22px;
+}
+
+progress {
+  width: 100%;
+}
+
+progress::-webkit-progress-value { background-color: var(--secondary-clr); }
+
+
+.goal {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  color: var(--secondary-clr);
+  font-weight: 600;
+}
+
+.cause-list li {
+  border-radius: 20px;
+  overflow: hidden;
+  flex-basis: 32%;
+}
+
+.donate-now-btn {
+  padding: 15px 25px;
+  margin-top: 45px;
+  display: block;
+  background: var(--secondary-clr);
+  color: var(--white-clr);
+  text-align: center;
+  font-size: 18px;
+}
+/*=================================
+  causes styling ends here
+=================================*/
 
 /*=================================
   main styling starts here
