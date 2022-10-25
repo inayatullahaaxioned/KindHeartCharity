@@ -734,6 +734,129 @@ progress::-webkit-progress-value { background-color: var(--secondary-clr); }
 /*=================================
   causes styling ends here
 =================================*/
+/*=================================
+  volunteer styling starts here
+=================================*/
+.volunteer {
+  position: relative;
+  background-color: var(--secondary-clr);
+  overflow: hidden;
+}
+
+.volunteer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.volunteer .heading {
+  color: var(--white-clr);
+}
+
+.volunteer-form {
+  flex-basis: 49%;
+}
+
+.volunteer-about {
+  flex-basis: 49%;
+}
+
+.volunteer-form form {
+  padding: 50px;
+  margin-top: 32px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.form-heading {
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row input,
+textarea {
+  padding: 18px 12px;
+  margin-bottom: 24px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--section-bg-clr);
+  flex-basis: 47%;
+}
+
+textarea {
+  flex-basis: 100%;
+  resize: none;
+}
+
+.form-row input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  padding-left: 5px;
+  font-size: 17px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 17px 0;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--secondary-clr);
+  color: var(--white-clr);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.volunteer-about img {
+  width: 300px;
+  height: 300px;
+  margin: 0 23% 50px ;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.volunteer-subheading {
+  padding: 16px 0;
+  color: var(--white-clr);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.volunteer-para {
+  padding-bottom: 16px;
+  text-align: center;
+  color: var(--white-clr);
+  line-height: 24px;
+}
+
+.volunteer-subheading,
+.volunteer-para {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.volunteer::after {
+  content: "";
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  right: -6%;
+  background-color: var(--primary-clr);
+}
+/*=================================
+  volunteer styling ends here
+=================================*/
 
 /*=================================
   main styling starts here
