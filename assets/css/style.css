@@ -552,8 +552,8 @@ small {
 }
 
 .designation {
-  display: inline-block;
   margin-bottom: 40px;
+  display: inline-block;
 }
 
 .team-para {
@@ -588,6 +588,74 @@ small {
 .instagram::before { content: "\f16d";}
 /*=================================
   Team styling ends here
+=================================*/
+/*=================================
+  become volunteer styling starts here
+=================================*/
+.become-volunteer {
+  background-color: var(--section-bg-clr);
+  position: relative;
+  overflow: hidden;
+}
+
+.become-volunteer .wrapper {
+  padding-left: 12%;
+  display: flex;
+}
+
+.become-volunteer .heading {
+  margin: 0 35px ;
+}
+
+.become-volunteer .heading span {
+  display: block;
+}
+
+.donation-volunteer {
+  margin-left: 11%;
+}
+
+.volunteer-btn {
+  padding: 15px 32px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  background-color: var(--secondary-clr);
+  color: var(--white-clr);
+  font-size: 18px;
+  line-height: normal;
+}
+
+.donation-btn {
+  margin-right: 27px;
+  color: var(--primary-clr);
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.become-volunteer::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: -34%;
+  left: -2.2%;
+  background-color: var(--primary-clr);
+}
+
+.become-volunteer::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border: 20px solid var(--secondary-clr);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -33%;
+  left:45%;
+}
+/*=================================
+  become volunteer styling ends here
 =================================*/
 
 /*=================================
