@@ -403,6 +403,122 @@ small {
 /*=================================
   Charity feature styling ends here
 =================================*/ 
+/*=================================
+  Our Story styling starts here
+=================================*/
+.story {
+  background-color: var(--section-bg-clr);
+}
+
+.story .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-story-img img{
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.left-story-img {
+  flex-basis: 49%;
+}
+
+.story-content {
+  flex-basis: 49%;
+}
+
+.story-about,
+.mission-list > li{
+  padding: 40px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+}
+
+.mission-list li { flex-basis: 48%; }
+
+.story-about {
+  margin-bottom: 20px;
+}
+
+.mission-list {
+  display: flex;
+  gap: 20px;
+}
+
+.story-about .sub-heading,
+.mission-list .sub-heading {
+  padding: 13px 0;
+  color: var(--primary-clr);
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.story-para,
+.mission-list p {
+  padding: 5px 0;
+  color: #717275;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.counter {
+  color: var(--primary-clr);
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.counter-text {
+  font-size: 17px;
+}
+
+.tick-icon {
+  margin: 10px 0;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--primary-clr);
+}
+
+.tick-icon::before {
+  content: "\f00c";
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--section-bg-clr);
+  color: var(--secondary-clr);
+  font-family: "FontAwesome";
+  float: left;
+  font-size: 14px;
+}
+
+.counter-list {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.counter-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.mission-list .padding-differ {
+  padding: 50px 0 50px 64px;
+  color: var(--primary-clr);
+}
+/*=================================
+  Our Story styling ends here
+=================================*/ 
 
 /*=================================
   main styling starts here
