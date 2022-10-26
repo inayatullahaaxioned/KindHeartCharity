@@ -219,8 +219,27 @@ section {
   height: auto;
 }
 
+.drop-list {
+  position: relative;
+}
+
 .drop-item {
   display: none;
+  width: 135px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 75%;
+  background: var(--white-clr);
+}
+
+.drop-item li {
+  margin: 10px 0;
+}
+
+.drop-item li a {
+  padding: 4% 0 4% 21px;
+  display: inline-block;
 }
 
 .nav-item {
@@ -263,6 +282,10 @@ small {
   color: var(--secondary-clr);
   font-size: 10.5px;
   text-transform: uppercase;
+}
+
+.drop-list:hover .drop-item {
+  display: block;
 }
 /*=================================
   Nav styling ends here
@@ -857,40 +880,51 @@ textarea::placeholder {
 /*=================================
   volunteer styling ends here
 =================================*/
-
 /*=================================
   main styling starts here
 =================================*/
-
-
-
-
-
-
-
-
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/*media query for hover effects desktop starts here*/
+@media only screen and (min-width: 995px) {
+  .nav-item:hover {
+    color: var(--primary-clr);
+    transition: all .4s;
+  }
 
+  .donate-btn:hover {
+    border-color: var(--primary-clr);
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    transition: all .4s;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.05);
+    transition: all .3s;
+  }
+
+  .envelope:hover {
+    color: var(--secondary-clr);
+    transition: all .3s;
+  }
+
+  .angle:hover {
+    opacity: .7;
+    transition: all .4s;
+  }
+  
+  .team-social:hover::before {
+    background-color: var(--primary-clr);
+    transition: all .4s;
+  }
+
+  .volunteer-btn:hover {
+    background-color: var(--primary-clr);
+    transition: all .4s;
+  }
 
 
 }  
