@@ -1086,5 +1086,43 @@ textarea::placeholder {
 }
 /*media query for 768px end here*/
 /*media query for 480px starts here*/
+@media only screen and (max-width:480px) {
+  .feature-list li {
+    padding: 15px;
+    flex-basis: 100%;
+  }
+
+  .banner-content h2 { font-size: 25px; }
+  .banner-content p { font-size: 12px; }
+  .mission-list { flex-direction: column; }
+  .story .wrapper { width: 100%; }
+  .team-image { margin: 0; }
+  .team-detail { margin: 0; }
+  .team-social-list { text-align: center; }
+  .cause-list { width: 100%; }
+  .form-heading { font-size: 25px; }
+  .volunteer-about img { margin-bottom: 20px; }
+  .feature-list { gap: 0; }
+
+  .volunteer-subheading {
+    width: 100%;
+    text-align: center;
+}
+  .volunteer-para {
+    width: 100%;
+    text-align: center;
+  }
+  .angle::before {
+    height: 40px;
+    width: 40px;
+  }
+
+  .volunteer-form form {
+    width: 100%;
+    padding: 20px;
+  }
+}
+/*media query for 480px end here*/
+/*media query for 320px starts here*/
 
 /*media query for 480px end here*/
