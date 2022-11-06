@@ -723,10 +723,8 @@ small {
 
 progress {
   width: 100%;
+  accent-color: var(--secondary-clr);
 }
-
-progress::-webkit-progress-value { background-color: var(--secondary-clr); }
-
 
 .goal {
   margin: 5px 0;
@@ -943,6 +941,7 @@ textarea::placeholder {
   .contact-link { flex-direction: column; }
   .social { margin-left: 1%; }
   .header { display: none; }
+  .nav-item.active { color: #717275; }
 
   .header .wrapper {
     flex-direction: column;
@@ -1037,5 +1036,55 @@ textarea::placeholder {
   .heading {
     margin-bottom: 15px;
   }
-
 }
+/*media query for 995px ends here*/
+/*media query for 768px starts here*/
+@media only screen and (max-width:768px) {
+  section { padding: 40px 0; }
+  .banner-content h2 {
+    font-size: 35px;
+  }
+
+  .feature-list li { flex-basis: 46%; }
+  .team-para { width: 100%; }
+  .team .wrapper {
+    padding-left: 0;
+    flex-direction: column;
+  }
+
+  .team-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .team-detail { 
+    width: 100%;
+  }
+
+  .cause-list { width: 75%; }
+  .cause-list li{ flex-basis: 100%; }
+  .volunteer-form input { width: 100%; }
+  .form-row { flex-direction: column; }
+  .become-volunteer .wrapper { flex-direction: column; }
+  .donation-btn { margin: 15px 0; }
+  .heading { font-size: 35px; }
+  .charity .heading { margin-bottom: 30px; }
+  .story .wrapper { padding: 0 25px; }
+  .donation-btn { display: block; }
+  .causes .heading { margin-bottom: 25px; }
+
+  .team-image img {
+    max-height: 400px;
+    max-width: 470px;
+  }
+
+  .become-volunteer .heading,
+  .volunteer-btn,
+  .volunteer-about {
+    z-index: 1;
+  }
+}
+/*media query for 768px end here*/
+/*media query for 480px starts here*/
+
+/*media query for 480px end here*/
